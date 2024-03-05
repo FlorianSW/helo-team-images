@@ -40,6 +40,7 @@ jobs:
           IMAGES_QUALITY: "100"
           IMAGES_FORMATS: "jpg,jpge,png"
           IMAGES_DIRECTORIES: "teams/"
+          IMAGES_SUFFIX: _128px
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
