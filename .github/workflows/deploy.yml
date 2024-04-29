@@ -48,6 +48,13 @@ jobs:
           IMAGES_FORMATS: "jpg,jpge,png"
           IMAGES_DIRECTORIES: "tournaments/"
           IMAGES_SUFFIX: _128px
+      - uses: gonzalonaveira/gh-image-resizing@master
+        with:
+          IMAGES_MAX_WIDTH: "128"
+          IMAGES_QUALITY: "100"
+          IMAGES_FORMATS: "jpg,jpge,png"
+          IMAGES_DIRECTORIES: "events/"
+          IMAGES_SUFFIX: _128px
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
